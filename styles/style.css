@@ -1,0 +1,815 @@
+@font-face {
+    font-family: 'Jokerman';
+    src: url('../fonts/komingo.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Boston';
+    src: url('../fonts/boston_traffic.ttf') format('truetype');
+}
+
+body{
+    background-color: rgb(250, 236, 236);
+}
+/** FOOTER */
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/** HEADER */
+.header{
+  padding-bottom: 30%;
+}
+.header-box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    position: relative;
+    background-color: #e93636;
+}
+.header-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-height: 100px;
+    /* height: 140px; */
+    object-fit: cover;
+    object-position: top;
+}
+.bg-img img {
+    max-width: 60%;
+    min-width: 20%;
+}
+/** HEADER CONTACT */
+.social{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end; /*   alinear a la derecha */
+    width: 100%; /*   ocupar todo el ancho */
+    padding: 10px; /* añadir un espacio entre los íconos y el borde derecho */
+    box-sizing: border-box; /*  incluir el padding en el ancho total */
+    /* margin-top: -50px; */
+}
+.d-wpp{
+    display: flex;
+    align-items: center; /* Alinear verticalmente al centro */
+    gap: 10px;
+    z-index: 1; /*agregado*/
+}
+.ig img{
+    width: 30px;
+    height: 30px;
+}
+
+/**INTRO IMGS*/
+.intro {
+    display: flex;
+    position: relative; /* Agrega posición relativa al contenedor */
+    margin-top: 5%;
+}
+
+.intro img {
+    min-width: 200px;
+    width: 100%;
+    position: absolute; /* Agrega posición absoluta a las imágenes */
+    z-index: 1; /* agregado**/
+}
+
+.intro img:last-child {
+    z-index: 1; /* agregado**/
+}
+.intro2 {
+    display: flex;
+    position: relative; /* Agrega posición relativa al contenedor */
+    margin-top: 5%;
+}
+.intro2 img{
+    min-width: 200px;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+.intro2 img:last-child {
+    z-index: 1; /* agregado**/
+}
+#rocks{
+    margin-top: 15%;
+}
+#rocks2{
+    margin-top: -10%;
+    
+}
+#rocks3{
+    display: none;
+}
+#donRamon {
+    width: 250px;
+    animation: slideFromRight 1s ease-in-out; /* Agrega la animación */
+    right: 50px; /* Ajusta la posición inicial hacia la derecha */
+    position: absolute; /* Cambia la posición a absoluta */
+}
+
+@keyframes slideFromRight {
+    0% {
+        right: -300px; /* Inicialmente, la imagen está fuera del contenedor hacia la derecha */
+    }
+    100% {
+        right: 50px; /* Al 100% de la animación, la imagen se desplaza hacia la izquierda y se muestra completamente */
+    }
+}
+/** HEADER END */
+
+/** NAV MENU */
+.menu-sect {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    overflow-x: auto;
+  scrollbar-width: thin; /* Ancho del scroll */
+  scrollbar-color: transparent transparent; /* Color del scroll */
+}
+
+.menu-sect::-webkit-scrollbar {
+  width: 0.1em; /* Ancho del scroll */
+}
+
+.menu-sect::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Color del pulgar del scroll */
+}
+.menu-wrapper {
+    display: flex;
+    justify-content: center;
+}
+.menu-nav {
+    display: flex;
+    align-items: center;
+    background-color: rgb(250, 236, 236);
+    margin-top: 30%;
+    /* margin-bottom: 50px; */
+    font-family: "Barlow", sans-serif;
+    white-space: nowrap; /* Evita que los elementos se dividan en varias líneas */
+}
+.menu-items h2 {
+    color: #c50c0c;
+    /* margin-top: 50px; */
+    font-family: "Jokerman";
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+}
+.menu-items h3{
+    font-family: "Jokerman";
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+    margin-left: 15px;
+    margin-top: 0;
+    /* margin-bottom: 0; */
+}
+.products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    z-index: 1; /*agregado*/
+    padding: 5px;
+}
+.products p {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: black;
+}
+.products img {
+    width: 80px;
+    height: 80px;
+}
+.menu-nav a {
+    text-decoration: none;
+    color: black;
+}
+
+/** MENU NAV BAR END*/
+
+/** PROMOCIONES */
+ .promo-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    font-family: "Barlow",sans-serif;
+  }
+.promo-section2 {
+    font-family: "Barlow",sans-serif;
+} 
+.promo-item, .promo-item2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 5%;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+.promo-item h3, .promo-item2 h3 {
+    font-size: 25px;
+    margin-bottom: 5px;
+    color: aliceblue;
+    font-family: "Jokerman";
+    background-image: url('../images/stroke4.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.promo-item h4, .promo-item2 h4 {
+    font-size: 16px;
+    margin-bottom: 0px;
+    color: #000000;
+    font-family: "Boston";
+}
+.promo-item p, .promo-item2 p {
+    text-align: center;
+    color: #888;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.promo-price, .promo-price2 {
+    /* background-image: url('../images/stroke3.png'); */
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+    padding-right: 10px;
+    color: #920a0a; 
+    font-family: "Jokerman";
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+.promo-price span, .promo-price span {
+    font-size: 14px;
+    font-weight: bold;
+}
+/** PROMOCIONES END */
+
+/** MENU */
+.menu-sect{
+    background-color: rgb(250, 236, 236);
+}
+.items-section{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 2px;
+    gap: 0.5rem;
+}
+/**PONGO EL PRECIO AL LADO DEL TITLE*/
+.info-div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 80px;
+    padding: 3px;
+}
+/**PONGO EL PRECIO AL LADO DEL TITLE*/
+
+.items-box-Wdesc{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    /* height: 220px; */
+    width: 100%; /* Cambia el valor a 100vw */
+    padding: 2%; /* Agregar un poco de espacio interno */
+    box-sizing: border-box; /* Incluir el padding en el tamaño total */
+}
+.items-box-Wdesc h4{
+    /* margin-left: 1.5%; */
+    margin-top: 2%;
+    font-family: "Boston";
+    font-size: 22px;
+} 
+.items-desc{
+    font-family: "Barlow",sans-serif;
+    max-width: auto;
+    height: auto;
+    width: 100%;
+    margin-top: -5%;
+    font-size: 18px;
+    color: rgb(72, 70, 70);
+    padding: 2px;
+    overflow: hidden; /* Oculta el contenido que excede el tamaño del div */
+    word-wrap: break-word;
+}
+.items-icon {
+    min-width: 90px;
+    width: 100%;
+    height: 50px;
+    position: absolute; /*  Posición absoluta */
+}
+.items-price {
+    display: flex;
+    align-items: center;
+    position: relative; /* Posición relativa al contenedor */
+    margin-top: -10%;
+    /* margin-left: -2.5%; */
+    margin-left: auto;
+    /* margin-right: auto; */
+    font-size: larger;
+    font-family: "Jokerman",sans-serif;
+}
+.items-price span {
+    color:  #ffffff;
+    font-weight: 700;
+    font-size: 25px;
+    padding: 15px;
+    z-index: 1;
+    margin-top: -10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1); /* Adjust the values as needed */
+}
+
+/**Imagenes de titulos */
+#title-salsas, #title-salsasPicantes, #title-bebidas, #title-bebidas,#title-burritos {
+    display: flex;
+    align-items: center;
+    z-index: 1; /**agregado**/
+    position: relative; /**agregado**/
+
+}
+/* #title-burritos{
+    margin-top: 60%;
+} */
+#title-salsasPicantes {
+    position: relative;
+    z-index: 1;
+}
+.item-container {
+   display: flex;
+   align-items: center;
+}
+
+.item-image {
+   width: 50px; /* Ajusta el tamaño de la imagen */
+   margin-top:-20%;
+}
+#picante {
+    margin-left: auto;
+    margin-top: auto;
+    /* margin-bottom: -150px; */
+    max-width: 120px;
+    position: relative;
+    /* top: -80px;  */
+    z-index: 2;
+    float: right; /* Imagen alineada hacia la derecha */
+}
+#totopos{
+    margin-left: auto;
+    margin-top: auto;
+    /* margin-bottom: -110px; */
+    /* width: 120px; */
+    position: relative;
+    /* top: -110px; */
+    z-index: 2;
+    float: right;
+}
+#bebidas{
+    margin-left: auto;
+    margin-top: auto;
+    /* margin-bottom: -110px; */
+    /* width: 120px; */
+    position: relative;
+    /* top: -110px; */
+    z-index: 2;
+    float: right;
+}
+.align{
+    display: flex;
+    align-items: center;
+}
+#burritosImg, #quesaImg, #fajitasImg, #tacosImg{
+    margin-left: auto;
+    margin-top: auto;
+    /* margin-bottom: -150px; */
+    /* width: 120px; */
+    position: relative;
+    /* top: -150px; */
+    z-index: 2;
+    float: right;
+}
+#title-quesadillas,#title-salsasPicantes{
+    /* background-image: url('../images/stroke3.png'); */
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+    padding-right: 10px;
+    font-size: 40px;
+}
+#title-salsasPicantes1{
+    background-image: url('../images/suave.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+    padding-right: 40px;
+    font-size: 25px;
+    color:aliceblue;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+#title-salsasPicantes2{
+    background-image: url('../images/fuerte.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+    padding-right: 10px;
+    font-size: 25px;
+    color:aliceblue;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+#title-salsasPicantes3{
+    background-image: url('../images/dulce.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+    /* padding-right: 10px; */
+    padding-right: 65px;    
+    font-size: 25px;
+    color:aliceblue;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+#title-salsas, #title-tacos,
+#title-burritos, #title-fajitas, #title-bebidas {
+    /* background-image: url('../images/stroke4.png'); */
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+    padding-right: 10px;
+    font-size: 40px;
+    /* background-size: 150% auto; */
+}
+#title-bebidas-alc{
+    background-image: url('../images/suave.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+    padding-right: 10px;
+    color: aliceblue;
+    font-size: 25px;
+
+}
+#title-salsas h2 {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra del texto */
+}
+#totopos {
+    max-width: 110px;
+    margin-left: auto;
+    /* margin-right: -6px; */
+}
+
+#bebedor {
+    max-width: 120px;
+    margin-left: auto;
+}
+#tacosImg {
+    max-width: 120px;
+    margin-left: auto;
+}
+#quesaImg {
+    max-width: 120px;
+    margin-left: -25px;
+}
+#fajitasImg{
+    max-width: 150px;
+    margin-left: auto;
+}
+#burritosImg {
+    max-width: 135px;
+    margin-left: auto;
+    /* margin-top: 20%; */
+}
+
+#bebedor, #tacosImg, #burritosImg, #picante, #fajitasImg,#quesaImg,#totopos, .promo-item, .promo-item2 {
+    animation: float 3s ease-in-out infinite;
+}
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+#price {
+    color: #ff0000; /* Color rojo para el precio */
+    font-family: "Jokerman";
+    font-weight: bold; /* Texto en negrita para el precio */
+}
+/**TOTOPOS P*/
+#totopos-desc1,
+#totopos-desc2,
+#totopos-desc3 {
+  font-size: 18px; /* Tamaño de fuente más pequeño */
+  font-weight: bold; /* Texto en negrita para el precio */
+  color: #000000;
+  padding: 6px;
+}
+/** MENU END */
+
+/* Media queries */
+@media screen and (min-width: 900px) {
+
+/**HEADER*/
+    /* .intro{
+        padding: 50px;;
+    } */
+    /* .header-box {
+      height: 230px;
+    } */
+    .header {
+        padding-bottom: 10%;
+    }
+    .bg-img img {
+        max-width: 30%;
+    }
+    .ig img{
+      width: 50px;
+      height: 50px;
+    }
+    /**HEADER END*/
+
+    /**MENU NAV*/
+    .products p{
+      font-size: 20px;
+    }
+    
+    .menu-items   {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+    .menu-items  h2 {
+        font-size: 40px;
+    }
+    /* .menu-nav {
+      margin-top: 8%;
+    } */
+    .products img {
+      width: 120px;
+      height: 120px;
+    }
+    .promo-item h3, .promo-item2 h3 {
+      font-size: 30px;
+    }
+    .promo-item h4, .promo-item2 h4 {
+      font-size: 25px;
+    }
+    .promo-price, .promo-price2 {
+      font-size: 25px;
+    }
+    .promo-price span, .promo-price span {
+      font-size: 25px;
+    }
+    .promo-item p, .promo-item2 p {
+      font-size: 25px;
+    }
+    /**MENU NAV END*/
+
+    /**MENU */
+    .items-section {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding: 2px;
+    }
+    .items-section h3{
+        margin-right: 20px;
+    }
+    .items-box-Wdesc {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: flex-start;
+      width: 50%;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+    .items-box-Wdesc h4, .items-price{
+      margin-left: 0.5%;
+      font-size: 35px;
+    } 
+    .items-desc {
+      margin-top: -15px;
+      font-size: 30px;
+    }
+    .items-icon {
+      width: 100%;
+      width: 100px;
+      height: 60px;
+      margin-top: 10px;
+      /* margin-bottom: 15px; */
+      position: absolute;
+    }
+    .items-price span {
+      font-size: 25px;
+    }
+    #title-salsas, #title-tacos,
+    #title-burritos, #title-fajitas,
+    #title-bebidas,#title-salsasPicantes{
+    font-size: 50px;
+    }
+    #title-bebidas-alc,#title-salsasPicantes1,#title-salsasPicantes2,
+    #title-salsasPicantes3{
+        font-size: 40px;
+    }
+    #totopos-desc1,#totopos-desc2,#totopos-desc3{
+      font-family: "Barlow",sans-serif;
+      font-size: 25px;
+    }
+
+    /**IMAGENES */
+    .item-container {
+        display: flex;
+        align-items: center;
+    }
+     
+    .item-image {
+        width: 80px; /* Ajusta el tamaño de la imagen */
+        margin-top:-50px;
+    }
+    #bebedor, #tacosImg, #picante{
+      margin-left: 20px;
+    }
+    #bebedor{
+      min-width: 200px;
+      /* margin-top: 100px; */
+    }
+    #picante{
+      min-width: 180px;
+      /* margin-top: 150px; */
+      margin-left: 0px;
+    }
+    #totopos {
+      min-width: 180px;
+      margin-left: 0px;
+      /* margin-top: 100px; */
+    }
+    #tacosImg{
+        min-width: 200px;
+        /* margin-top: 150px; */
+    } 
+    #burritosImg {
+      /* margin-left: 200px; */
+      /* margin-right: 200px; */
+      /* margin-top: 200px; */
+      min-width: 220px;
+    }
+    #quesaImg{
+        min-width: 250px;
+        margin-left: 0px;
+        /* margin-top: 150px; */
+    }
+     #rocks {
+      width: 42%;
+      margin-top: 5%;
+
+    } 
+    #rocks2, #rocks3{
+      display: none;
+    }
+    #rocks3{
+      display: block;
+      width: 42%;
+      position: absolute;
+      right: 0;
+      margin-top: 5%;
+    }
+    #donRamon {
+      width: 450px;
+      animation: slideFromRight 1s ease-in-out;
+      right: 700px; 
+      margin-top: 10px;
+    }
+
+    #fajitasImg{
+        margin-left: 0px;
+        /* margin-top: 150px; */
+        min-width: 250px;
+    }
+
+    @keyframes slideFromRight {
+      0% {
+          right: -200px; /* Inicialmente, la imagen está fuera del contenedor hacia la derecha */
+      }
+      100% {
+          right: 700px; /* Al 100% de la animación, la imagen se desplaza hacia la izquierda y se muestra completamente */
+      }
+    }
+}
+
+@media screen and (max-width: 280px) { 
+    /* Styles for Galaxy Fold */
+    .header-box{
+        height: 150px;
+        width: 100%;
+    }
+    .bg-img img{
+        width: 100%;
+    }
+    #donRamon {
+        width: 225px;
+    }
+    .items-price{
+        margin-left: 5px;
+    }
+    .info-div{
+        gap:40px;
+    }
+    .items-icon {
+        width: 50%;
+    }
+
+    /* .social { */
+        /* display: flex; */
+        /* align-items: flex-end; */
+        /* justify-content: flex-end; */
+        /* width: 100%; */
+        /* padding: 10px; */
+        /* box-sizing: border-box; */
+        /* margin-top: -100px; */
+    /* } */
+
+ } 
+@media screen and (min-width: 540px) and (max-width: 540px) { 
+    /* Styles for Surface Duo */
+     .header-box {
+      height: 150px;
+      width: 100%;
+    } 
+    .social{
+        margin-top: -5%;
+    }
+    #rocks{
+        display: none;
+
+    }
+    #rocks2{
+        display: none;
+
+    }
+    #rocks3{
+        display: none;
+    }
+    .bg-img img {
+        max-width: 30%;
+        min-width: 20%;
+    }
+    .items-price{
+        margin-top: -5%;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 900px) { 
+    /* Styles for tablets */
+    /* .social{
+        margin-top: -60px;
+    } */
+    .header{
+        padding:5%
+    }
+    .items-price{
+    margin-left: 0;
+    margin-top: -20px;
+    }
+    .items-desc{
+    margin-top: -20px;
+    }
+    .bg-img img {
+        max-width: 30%;
+        min-width: 20%;
+    }
+    #rocks,#rocks2, #rocks3,#donRamon{
+        display: none;
+    }
+    #fajitasImg{
+        width: 200px;
+        /* margin-left: 0; */
+    }
+    #quesaImg,#tacosImg, #totopos, #picante, #bebedor, #burritosImg{
+        width: 165px;
+        /* margin-left: 0; */
+    }
+    .item-image{
+        width: 70px;
+    }
+}   
+
+
+
